@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>모바일</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Mobile</h1>
+      <a href="#" class="btn">button</a>
+      <a href="#" class="toggle">toggle</a>
+    </header>
+    <nav id="toggleGnb">
+      <ul>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+      </ul>
+    </nav>
+    <script>
+      $("#toggleGnb").hide();
+      $(".toggle").on('click',function(){
+        $("#toggleGnb").slideToggle();
+      })
+    </script>
+    <nav id="topGnb">
+      <ul>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+      </ul>
+    </nav>
+    <nav id="bottmGnb">
+      <ul>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+        <li><a href="#">버튼</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <header id="contentHeader">
+        <h2>Lorem Ipsum</h2>
+        <time datetime="2021-08-31">2021-08-31 Birthday</time>
+      </header>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </section>
+    <footer id="footer">
+      <address>HTML5+CSS3 Basic</address>
+      <small>Website Layout Basic</small>
+    </footer>
+  </body>
+</html>
